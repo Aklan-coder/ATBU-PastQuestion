@@ -126,7 +126,6 @@ Request Body:
 {
   "text": "Your question text here"
 }
-
 ###### Delete Question by ID
 DELETE http://localhost:8080/api/question/{{questionId}}
 
