@@ -1,5 +1,31 @@
 # ATBU-PastQuestion Documentation
 
+### Registration and AUthentication API Documentation
+
+### Registration API
+## To register new user
+POST http://localhost:8080/api/v1/auth/register
+
+{
+  "id": 0,
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "phone_number": "",
+  "faculty": "",
+  "password": ""
+}
+
+## To Authenticate USer
+### Authentication API
+
+POST http://localhost:8080/api/v1/auth/authenticate
+{
+  "email": "",
+  "password": ""
+}
+
+
 ### Course API Documentation
 #### Get all Courses
 GET http://localhost:8080/api/courses
