@@ -25,6 +25,9 @@ POST http://localhost:8080/api/v1/auth/authenticate
   "password": ""
 }
 
+## To test the authorized  users on apllication with demo to return status 201:ok
+
+GET http://localhost:8080/api/v1/demo-controller
 
 ### Course API Documentation
 #### Get all Courses
