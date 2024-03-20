@@ -41,7 +41,6 @@ GET http://localhost:8080/api/course/5
 
 #### Add a New Course
 POST http://localhost:8080/api/course
-Content-Type: application/json
 
 Request Body:
 {
@@ -56,7 +55,6 @@ Request Body:
 
 #### Update Course Code by ID
 PUT http://localhost:8080/api/course/{{courseId}}
-Content-Type: application/json
 
 Example: Update course code for ID number 2
 PUT http://localhost:8080/api/course/2
@@ -94,8 +92,6 @@ GET http://localhost:8080/api/department/3
 
 ###### Create a New Department
 POST http://localhost:8080/api/department
-Content-Type: application/json
-
 Request Body:
 {
   "id": 39,
@@ -122,7 +118,6 @@ Request Body:
   "departmentName": "Department of Agricultural Extension and Rural Developmentss"
 }
 This documentation provides clear instructions on how to interact with the Department API endpoints, including examples for each operation.
-
 
 ### Question API Documentation
 
@@ -163,7 +158,6 @@ DELETE http://localhost:8080/api/question/23
 
 ###### Create a New Question
 POST http://localhost:8080/api/question
-Content-Type: application/x-www-form-urlencoded
 
 Request Body:
 text=Your%20question%20text%20here&courseId=22
