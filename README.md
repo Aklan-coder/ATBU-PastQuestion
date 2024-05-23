@@ -1,3 +1,44 @@
+
+Overview
+The ATBU Past Question Web Application is a comprehensive online platform designed to provide students of Abubakar Tafawa Balewa University (ATBU) with access to past exam questions. The backend solution, developed using Java, Spring Boot, and Spring Security, ensures a secure, efficient, and scalable platform for managing and accessing past questions.
+Technical Specifications
+Programming Language: Java 8
+Framework: Spring Boot 2.7.2
+Authentication and Authorization: Spring Security 5.7.2
+Database: MySQL 8.0
+Tools: Spring JDBC, Maven, Git
+Backend Solution Essence
+The backend solution is designed to provide a robust and secure API for the frontend application, enabling students to:
+Register and login securely using Spring Security
+Access past questions categorized by faculty, department, and course
+Search past questions by keyword or phrase
+View question details, including answers and marking schemes
+Download past questions in PDF format
+API Endpoints
+The backend solution exposes the following API endpoints for the frontend application:
+/register: Register a new student account
+/login: Authenticate and login a student
+/past-questions: Retrieve a list of past questions
+/past-questions/:id: Retrieve a specific past question by ID
+/search: Search past questions by keyword or phrase
+/download/:id: Download a past question in PDF format
+API Request and Response
+Request: HTTP GET /past-questions
+Response: JSON array of past question objects
+Request: HTTP GET /past-questions/:id
+Response: JSON object containing past question details
+Security
+Spring Security ensures secure authentication and authorization for the backend solution. Students must register and login to access past questions. Role-based access control is implemented to restrict access to certain features and data.
+Database
+The MySQL relational database stores all past question data, including questions, answers, marking schemes, and student information. Spring JDBC is used for database interactions.
+Tools
+Maven is used for dependency management and Git for version control.
+Usefulness
+The ATBU Past Question Web Application provides students with a valuable resource for exam preparation, allowing them to access past questions and practice effectively. The backend solution ensures a secure, efficient, and scalable platform for managing and accessing past questions.
+Frontend Integration
+The frontend developer can integrate the backend solution by calling the exposed API endpoints using HTTP requests. For example, to retrieve a list of past questions, the frontend can send a GET request to /past-questions. To retrieve a specific past question, the frontend can send a GET request to /past-questions/:id.
+By following this documentation, the frontend developer can seamlessly integrate the backend solution, providing a comprehensive and user-friendly experience for students.
+
 # ATBU-PastQuestion Documentation
 
 ### Registration and AUthentication API Documentation
